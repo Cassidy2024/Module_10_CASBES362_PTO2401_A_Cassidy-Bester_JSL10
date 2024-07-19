@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
     document.getElementById("solveRoom1").addEventListener("click", () => {
         fetch('books.json') 
             .then(response => response.json())
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("room2Result").textContent = `The code to unlock the door is: ${Array.from(commonConcepts).join(', ')}`;
     });
 
-    
     document.getElementById("solveRoom3").addEventListener("click", async () => {
         try {
             const response = await fetch('directions.json');
